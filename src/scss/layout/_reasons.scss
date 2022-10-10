@@ -5,7 +5,7 @@
     grid-template-rows: auto auto auto auto auto;
     text-align: center;
     &__title{
-        font-family: RobotoSlab;
+        font-family: 'Roboto Slab';
         font-size: 24px;
         font-weight: bold;
         line-height: $lineHeight;
@@ -20,6 +20,26 @@
             border: none;
             background-color: $colorButton;
             border-radius: 22.5px;
+            padding: 0 30px 0 30px; /*width: 184px*/
+            margin: auto;
+            margin-bottom: 50px;
+        }
+    }
+    &__article{
+        &--title{
+            font-family: 'Roboto Slab';
+            font-size: 18px;
+            font-weight: bold;
+            line-height: $lineHeight;
+            color: $colorSubtitle;
+        }
+        &--text{
+            font-size: 18px;
+            line-height: $lineHeight;
+            width: 18ch;
+            margin: auto;
+            padding-bottom: 44px;
+
         }
     }
 }
