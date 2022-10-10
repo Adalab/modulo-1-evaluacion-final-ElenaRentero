@@ -8,19 +8,19 @@
         font-family: 'Roboto Slab';
         font-size: 24px;
         font-weight: bold;
+        text-transform: capitalize;
         line-height: $lineHeight;
         color: $colorSubtitle;
         margin: 29px 15px 49px 15px;
         &--button{
             font-size: 20px;
-            font-weight: 500;
             line-height: 45px;
             color: $colorTitle;
             margin: 10px 29.5px 0 30.5px;
             border: none;
             background-color: $colorButton;
             border-radius: 22.5px;
-            padding: 0 30px 0 30px; /*width: 184px*/
+            padding: 0 30px 0 30px;
             margin: auto;
             margin-bottom: 50px;
         }
@@ -36,7 +36,7 @@
         &--text{
             font-size: 18px;
             line-height: $lineHeight;
-            width: 18ch;
+            width: 19ch;
             margin: auto;
             padding-bottom: 44px;
 

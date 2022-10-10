@@ -16,26 +16,27 @@
     object-fit: contain;
   }
   &__nav{
-    margin-top: 40px;
+    margin-top: 30px;
     &--list{
       text-decoration: none;
       color: $colorTitle;
       font-size: 16px;
       line-height: $lineHeight;
+      font-weight: 300;
+      font-family: 'Roboto';
     }
   }
 }
 
 .footer__nav--list .copy{
   font-size: 14px;
-  line-height: $lineHeight;
 }
 
 .footer__nav--list .love{
   display: inline-block;
-  line-height: $lineHeight;
   padding-bottom: 50px;
   font-size: 14px;
+  text-transform: lowercase;
 }
 
 .footer__nav--list i{

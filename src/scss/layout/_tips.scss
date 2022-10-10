@@ -3,7 +3,7 @@
         color: $colorSubtitle;
         font-size: 24px;
         font-family: 'Roboto Slab';
-        font-weight: bold;
+        font-weight: 700;
         line-height: $lineHeight;
         margin: 0 0 0 15px;
         text-transform: capitalize;
@@ -28,13 +28,13 @@
 }
 
 .tips .button{
-    margin: 20px 0 20px 30px;
+    margin: 30px 0 40px 20px;
     color: $colorButton;
     font-size: 20px;
-    font-weight: 500;
     line-height: 40px;
     border-radius: 22px;
+    border: solid 2px;
     border-color: $colorButton;
-    padding: 0 20px 0 20px;
+    padding: 0 23px 0 23px;
     background-color: white;
 }
