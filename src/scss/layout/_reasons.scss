@@ -27,6 +27,11 @@
             margin: 36px 0 38px 0;
         }
 
+        @media all and (min-width: 1200px) {
+            font-size: 32px;
+            margin: 61px 0 43px 0;
+        }
+
         &--button{
             font-family: 'Roboto';
             font-size: 20px;
@@ -45,6 +50,11 @@
                 grid-area: button;
                 margin-top: 20px;
                 padding: 0 40px 0 40px;
+            }
+
+            @media all and (min-width: 1200px) {
+                padding: 0 62px 0 62px;
+                margin-bottom: 60px;
             }
         }
     }
@@ -75,6 +85,11 @@
                 margin: 0 0 57px 30;
                 color: $colorSubtitle;
                 font-weight: 500;
+            }
+
+            @media all and (min-width: 1200px) {
+                width: 353px;
+                font-weight: 400;
             }
         }
     }

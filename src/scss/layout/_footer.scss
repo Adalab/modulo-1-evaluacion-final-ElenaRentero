@@ -1,4 +1,16 @@
-.footer{
+*.footer{
+  text-align: center;
+    &__button{
+    padding: 08px 13px 08px 13px;
+    border-radius: 40px;
+    border: none;
+    position: absolute;
+    background-color: $colorTitle;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+  }
+
+.menu{
   background-color: $backgroundFooter;
   display: flex;
   flex-direction:column;
@@ -10,20 +22,18 @@
 
   @media all and (min-width: 768px) {
     padding-top: 10px;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    gap: 30px;
+    justify-content: space-around;
+    text-align: left;
+    padding-bottom: 40px;
+    align-items: flex-start;
   }
-  &__button{
-    padding: 08px 13px 08px 13px;
-    border-radius: 40px;
-    border: none;
-    transform: translateY(-50%);
-    background-color: $colorTitle;
-    object-fit: contain;
 
-    @media all and (min-width: 768px) {
-      transform: translateY(-70%);
-  }
-  }
+  @media all and (min-width: 1200px) {
+    padding: 20px 370px 40px 370px;
+}
+
   &__nav{
     margin-top: 30px;
     &--list{
@@ -36,18 +46,35 @@
     }
   }
 }
+}
 
-.footer__nav--list .copy{
+.menu__nav--list .copy{
   font-size: 14px;
 }
 
-.footer__nav--list .love{
+.menu__nav--list .love{
   display: inline-block;
   padding-bottom: 50px;
   font-size: 14px;
   text-transform: lowercase;
 }
 
-.footer__nav--list i{
+.menu__nav--list i{
   color: $colorButton;
+}
+
+.menu .articles{
+  padding-top: 30px;
+}
+
+@media all and (min-width: 768px) {
+.menu .articles{
+  order: 1;
+  padding-top: 0;
+}
+.menu .components{
+  order: 2;
+  font-size: 14px;
+  margin: 30px 30px 0 0px;
+}
 }
