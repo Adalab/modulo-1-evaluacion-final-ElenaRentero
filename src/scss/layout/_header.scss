@@ -1,0 +1,11 @@
+.header{
+    &__menu{
+        &--button{
+            background-color: #0271bc;
+            border: none;
+            position: fixed;
+            top: 0;
+            padding: 0px 15px 10px 15px;
+        }
+    }
+}
