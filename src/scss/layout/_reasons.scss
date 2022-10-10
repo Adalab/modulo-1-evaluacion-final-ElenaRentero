@@ -4,15 +4,31 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
     text-align: center;
+
+    @media all and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 'title title title' 'article article article' 'button button button';
+    }
+
     &__title{
         font-family: 'Roboto Slab';
         font-size: 24px;
-        font-weight: bold;
+        font-weight: 700;
         text-transform: capitalize;
         line-height: $lineHeight;
         color: $colorSubtitle;
         margin: 29px 15px 49px 15px;
+
+        @media all and (min-width: 768px) {
+            font-size: 26px;
+            line-height: 45px;
+            grid-area: title;
+            margin: 36px 0 38px 0;
+        }
+
         &--button{
+            font-family: 'Roboto';
             font-size: 20px;
             line-height: 45px;
             color: $colorTitle;
@@ -23,6 +39,13 @@
             padding: 0 30px 0 30px;
             margin: auto;
             margin-bottom: 50px;
+            position: relative;
+
+            @media all and (min-width: 768px) {
+                grid-area: button;
+                margin-top: 20px;
+                padding: 0 40px 0 40px;
+            }
         }
     }
     &__article{
@@ -32,6 +55,12 @@
             font-weight: bold;
             line-height: $lineHeight;
             color: $colorSubtitle;
+
+            @media all and (min-width: 768px) {
+                font-size: 24px;
+                grid-area: article;
+                margin: 0 0 18px 0;
+            }
         }
         &--text{
             font-size: 18px;
@@ -39,7 +68,14 @@
             width: 19ch;
             margin: auto;
             padding-bottom: 44px;
+            font-family: 'Roboto';
 
+            @media all and (min-width: 768px) {
+                font-size: 20px;
+                margin: 0 0 57px 30;
+                color: $colorSubtitle;
+                font-weight: 500;
+            }
         }
     }
 }
