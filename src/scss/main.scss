@@ -12,7 +12,9 @@
 @import 'core/reset';
 @import 'layout/header';
 @import 'layout/hero';
+@import 'layout/tips';
+@import 'layout/reasons';
 
 :root{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'RobotoSlab', sans-serif;
 }

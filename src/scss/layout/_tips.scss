@@ -1,0 +1,40 @@
+.tips{
+    &__title{
+        color: $colorSubtitle;
+        font-size: 24px;
+        font-family: 'RobotoSlab';
+        font-weight: bold;
+        line-height: $lineHeight;
+        margin: 0 0 0 15px;
+        text-transform: capitalize;
+        width: 20ch;
+        text-align: left;
+        &--description{
+            color: $tipsText;
+            font-size: 18px;
+            line-height: $lineHeight;
+            text-align: left;
+            margin: 10px 0 0 15px;
+        }
+    }
+}
+
+.tips .small{
+    font-size: 14px;
+    color: $colorTips;
+    margin: 50px 0 0px 15px;
+    line-height: $lineHeight;
+    text-align: left;
+}
+
+.tips .button{
+    margin: 20px 0 20px 30px;
+    color: $colorButton;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    border-radius: 22px;
+    border-color: $colorButton;
+    padding: 0 20px 0 20px;
+    background-color: white;
+}
