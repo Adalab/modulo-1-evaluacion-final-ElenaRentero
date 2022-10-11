@@ -58,10 +58,11 @@
 }
 
 .hero .button{
-    padding: 15px 10px 10px 11px;
+    padding: 20px 20px 20px 20px;
     border-radius: 22.5px;
     border: none;
     margin: 35px 0 40px 0;
+    transition: 200ms;
 
     @media all and (min-width: 768px) {
         margin-top: 10px;
@@ -72,4 +73,23 @@
         margin-top: 34px;
         margin-bottom: 10px;
     }
+}
+
+.button .arrow{
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.arrow:hover{
+    animation: bounce 1s infinite linear;
+}
+
+@keyframes bounce {
+	0% {transform: translateY(-10%)}
+	25% {transform: translateY(-30%)}
+	50% {transform: translateY(-10%)}
+	75% {transform: translateY(-30%)}
+	100% {transform: translateY(-10%)}
 }
