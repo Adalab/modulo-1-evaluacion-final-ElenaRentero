@@ -73,6 +73,7 @@
     background-color: white;
     font-family: 'Roboto';
     font-weight: 500;
+    transition: 0.2s;
 
     @media all and (min-width: 768px) {
         margin: 0 32.5px 60px 40px;
@@ -88,4 +89,9 @@
         width: auto;
         border-radius: 27px;
     }
+}
+
+.button:hover{
+    background-color: $colorButton;
+    color: $colorTitle;
 }

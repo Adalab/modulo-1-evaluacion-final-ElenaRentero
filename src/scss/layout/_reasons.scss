@@ -45,6 +45,7 @@
             margin: auto;
             margin-bottom: 50px;
             position: relative;
+            transition: 0.3s;
 
             @media all and (min-width: 768px) {
                 grid-area: button;
@@ -56,6 +57,10 @@
                 padding: 0 62px 0 62px;
                 margin-bottom: 60px;
             }
+        }
+
+        &--button:hover {
+            background-color: $colormenu;
         }
     }
     &__article{
