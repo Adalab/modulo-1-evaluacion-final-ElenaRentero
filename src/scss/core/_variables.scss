@@ -1,10 +1,44 @@
-/*$colorText: purple;
+@mixin title(
+  $colorTitle,
+  $font-size,
+  $font-weight,
+  $line-height,
+  $text-transform,
+  $font-family
+) {
+  color: $colorTitle;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-transform: $text-transform;
+  font-family: $font-family;
+  text-align: center;
+}
 
-@mixin title ($color) {
-    text-transform: uppercase;
-    text-align: center;
-    color: $color;
-}*/
+@mixin text($colorText, $font-size, $line-height, $text-align) {
+  color: $colorText;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: $text-align;
+}
+
+@mixin button(
+  $colorButton,
+  $fontFamily1,
+  $font-size,
+  $line-height,
+  $border-radius,
+  $background-color,
+  $font-weight
+) {
+  color: $colorButton;
+  font-family: $fontFamily1;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  font-weight: $font-weight;
+}
 
 $colormenu: #0271bc;
 $colorTitle: #ffffff;
@@ -15,4 +49,5 @@ $lineHeight: 30px;
 $colorButton: #f26002;
 $backgroundReasons: #eff9ff;
 $backgroundFooter: #304268;
-
+$fontFamily1: "Roboto", sans-serif;
+$fontFamily2: "Roboto Slab", serif;

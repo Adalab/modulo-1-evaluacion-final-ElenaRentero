@@ -1,6 +1,7 @@
-*.footer{
+*.footer {
   text-align: center;
-    &__button{
+  background-color: $backgroundFooter;
+  &__button {
     padding: 08px 13px 08px 13px;
     border-radius: 40px;
     border: none;
@@ -10,84 +11,99 @@
     transform: translate(-50%, -50%);
   }
 
-    &__button:hover {
-      box-shadow: 0 1px 5px rgba(0,0,0,0.2);
-      animation: bounce 0.7s infinite linear;
-    }
-
-.menu{
-  background-color: $backgroundFooter;
-  display: flex;
-  flex-direction:column;
-  align-items:center;
-  text-transform: uppercase;
-  text-align: center;
-  color: $colorTitle;
-  font-size: 16px;
-
-  @media all and (min-width: 768px) {
-    padding-top: 10px;
-    flex-direction: row-reverse;
-    gap: 30px;
-    justify-content: space-around;
-    text-align: left;
-    padding-bottom: 40px;
-    align-items: flex-start;
+  &__button:hover {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    animation: bounce 0.7s infinite linear;
   }
 
-  @media all and (min-width: 1200px) {
-    padding: 20px 370px 40px 370px;
-}
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $colorTitle;
+    font-size: 16px;
 
-  &__nav{
-    margin-top: 30px;
-    &--list{
-      text-decoration: none;
-      color: $colorTitle;
-      font-size: 16px;
-      line-height: $lineHeight;
-      font-weight: 300;
-      font-family: 'Roboto';
+    @media all and (min-width: 768px) {
+      padding-top: 10px;
+      flex-direction: row-reverse;
+      gap: 30px;
+      justify-content: space-around;
+      text-align: left;
+      padding-bottom: 40px;
+      align-items: flex-start;
+    }
+
+    @media all and (min-width: 1200px) {
+      padding: 20px 370px 40px 370px;
+    }
+
+    .articles {
+      padding-top: 30px;
+
+      @media all and (min-width: 768px) {
+        order: 1;
+        padding-top: 0;
+      }
+    }
+
+    .components {
+      @media all and (min-width: 768px) {
+        order: 2;
+        font-size: 14px;
+        margin: 30px 30px 0 0px;
+      }
+    }
+
+    &__nav {
+      margin-top: 30px;
+      &--list {
+        @include title(
+          $colorTitle,
+          16px,
+          300,
+          $lineHeight,
+          uppercase,
+          $fontFamily1
+        );
+        text-decoration: none;
+
+        @media all and (min-width: 768px) {
+          text-align: left;
+        }
+
+        .copy {
+          font-size: 14px;
+        }
+
+        .love {
+          padding-bottom: 50px;
+          font-size: 14px;
+          text-transform: lowercase;
+
+          .fa-heart {
+            color: $colorButton;
+          }
+        }
+      }
     }
   }
-}
-}
-
-.menu__nav--list .copy{
-  font-size: 14px;
-}
-
-.menu__nav--list .love{
-  display: inline-block;
-  padding-bottom: 50px;
-  font-size: 14px;
-  text-transform: lowercase;
-}
-
-.menu__nav--list i{
-  color: $colorButton;
-}
-
-.menu .articles{
-  padding-top: 30px;
-}
-
-@media all and (min-width: 768px) {
-.menu .articles{
-  order: 1;
-  padding-top: 0;
-}
-.menu .components{
-  order: 2;
-  font-size: 14px;
-  margin: 30px 30px 0 0px;
-}
 }
 
 @keyframes bounce {
-  0% { transform: translate(-50%, -50%); }
-  25% {transform: translate(-50%, -65%); }
-  50%{ transform: translate(-50%, -50%); }
-  75%{ transform: translate(-50%, -35%); }
-  100% { transform: translate(-50%, -50%); }
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    transform: translate(-50%, -65%);
+  }
+  50% {
+    transform: translate(-50%, -50%);
+  }
+  75% {
+    transform: translate(-50%, -35%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }

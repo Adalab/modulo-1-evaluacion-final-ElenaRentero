@@ -1,95 +1,94 @@
-.hero{
-    background-image: url('../images/cover.jpeg');
-    height: 100vh;
+.hero {
+  background-image: url("../images/cover.jpeg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__title {
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    @include title($colorTitle, 42px, 600, 55px, uppercase, $fontFamily2);
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    margin: 0 0 15px 0px;
 
-    &__title{
-        font-family: 'Roboto Slab';
-        width: 100%;
-        color: $colorTitle;
-        font-size: 42px;
-        font-weight: 600;
-        text-align: center;
-        text-transform: uppercase;
-        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-        margin: 0 0 15px 0px;
-        line-height: 55px;
-
-        @media all and (min-width: 768px) {
-            font-size: 80px;
-            line-height: 106px;
-            margin-bottom: 20px;
-        }
-
-        @media all and (min-width: 1200px) {
-            font-size: 100px;
-            line-height: 132px;
-            width: 18ch;
-            margin-bottom: 0;
-        }
-
-        &--second{
-            color: $colorTitle;
-            line-height: 19px;
-            font-size: 16px;
-            text-align: center;
-            font-family: 'Roboto';
-            font-weight: 300;
-
-            @media all and (min-width: 768px) {
-                font-size: 24px;
-                line-height: 28px;
-                width: 24ch;
-            }
-
-            @media all and (min-width: 1200px) {
-                width: 100%;
-            }
-        }
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 106px;
+      margin-bottom: 20px;
     }
-}
 
-.hero .button{
-    padding: 20px 20px 20px 20px;
+    @media all and (min-width: 1200px) {
+      font-size: 100px;
+      line-height: 132px;
+      width: 18ch;
+      margin-bottom: 0;
+    }
+
+    &--second {
+      @include title($colorTitle, 16px, 300, 19px, none, $fontFamily1);
+
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 28px;
+        width: 24ch;
+      }
+
+      @media all and (min-width: 1200px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .button {
+    padding: 21px 22px 21px 22px;
     border-radius: 22.5px;
     border: none;
     margin: 35px 0 40px 0;
     transition: 200ms;
 
     @media all and (min-width: 768px) {
-        margin-top: 10px;
-        margin-bottom: 50px;
+      margin-top: 10px;
+      margin-bottom: 50px;
     }
 
     @media all and (min-width: 1200px) {
-        margin-top: 34px;
-        margin-bottom: 10px;
+      margin-top: 34px;
+      margin-bottom: 10px;
     }
+  }
 }
 
-.button .arrow{
-    width: 20px;
-    height: 12px;
-    position: absolute;
-    transform: translateX(-50%) translateY(-50%);
+.button .arrow {
+  width: 20px;
+  height: 12px;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
 }
 
-.arrow:hover{
-    animation: bounce 1s infinite linear;
+.arrow:hover {
+  animation: bounce 1s infinite linear;
 }
 
 @keyframes bounce {
-	0% {transform: translateY(-10%)}
-	25% {transform: translateY(-30%)}
-	50% {transform: translateY(-10%)}
-	75% {transform: translateY(-30%)}
-	100% {transform: translateY(-10%)}
+  0% {
+    transform: translateY(-10%);
+  }
+  25% {
+    transform: translateY(-30%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  75% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
 }

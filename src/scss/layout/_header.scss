@@ -1,11 +1,11 @@
-.header{
-    &__menu{
-        &--button{
-            background-color: $colormenu;
-            border: none;
-            position: fixed;
-            top: 0;
-            padding: 10px 15px 10px 15px;
-        }
+.header {
+  &__menu {
+    &--button {
+      background-color: $colormenu;
+      border: none;
+      position: fixed;
+      top: 0;
+      padding: 10px 15px 10px 15px;
     }
+  }
 }
