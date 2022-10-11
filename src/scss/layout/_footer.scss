@@ -12,13 +12,8 @@
 
     &__button:hover {
       box-shadow: 0 1px 5px rgba(0,0,0,0.2);
-      width: 55px;
-      height: 50px;
+      animation: bounce 0.7s infinite;
     }
-
-    &__button:hover .image {
-      animation: bounce 2s infinite linear;
-  }
 
 .menu{
   background-color: $backgroundFooter;
@@ -90,9 +85,9 @@
 }
 
 @keyframes bounce {
-	0% {transform: translateX(0%) translateY(-05%)}
-	25% {transform: translateX(0%) translateY(-30%)}
-	50% {transform: translateX(0%) translateY(-05%)}
-	75% {transform: translateX(0%) translateY(-30%)}
-	100% {transform: translateX(0%) translateY(-05%)}
+  0% { transform: translate(-50%, -50%); }
+  25% {transform: translate(-50%, -65%); }
+  50%{ transform: translate(-50%, -50%); }
+  75%{ transform: translate(-50%, -35%); }
+  100% { transform: translate(-50%, -50%); }
 }
