@@ -1,6 +1,6 @@
 *.footer {
   text-align: center;
-  background-color: $backgroundFooter;
+  background-color: $colormenu;
   &__button {
     padding: 08px 13px 08px 13px;
     border-radius: 40px;
@@ -21,7 +21,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: $colorTitle;
+    color: $colorSubtitle;
     font-size: 16px;
 
     @media all and (min-width: 768px) {
@@ -39,27 +39,34 @@
     }
 
     .articles {
-      padding-top: 30px;
-
       @media all and (min-width: 768px) {
-        order: 1;
+        order: 3;
         padding-top: 0;
       }
     }
 
     .components {
       @media all and (min-width: 768px) {
-        order: 2;
         font-size: 14px;
         margin: 30px 30px 0 0px;
       }
+
+    }
+
+      .media {
+        @media all and (min-width: 768px) {
+          order: 2;
+          font-size: 14px;
+          margin: 30px 30px 0 0px;
+        }
+      
     }
 
     &__nav {
-      margin-top: 30px;
+      margin-top: 45px;
       &--list {
         @include title(
-          $colorTitle,
+          $colorSubtitle,
           16px,
           300,
           $lineHeight,
@@ -84,7 +91,15 @@
           .fa-heart {
             color: $colorButton;
           }
+
+          .fa-heart+span {
+            color: $colorButton;
+          }
         }
+
+        /*.components{
+          color: $colorButton;
+        }*/
       }
     }
   }
