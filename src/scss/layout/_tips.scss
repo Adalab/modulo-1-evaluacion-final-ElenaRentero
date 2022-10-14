@@ -25,6 +25,7 @@
     }
 
     &--description {
+      font-family: $fontFamily1;
       @include text($tipsText, 18px, $lineHeight, left);
       margin: 10px 15px 0 15px;
 
