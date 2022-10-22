@@ -22,41 +22,42 @@
             alt="Adalab home" /></a></button>
     </nav>
   </header>
-  <hero class="hero">
-      <h1 class="hero__title">Anonymous proxy</h1>
-      <h2 class="hero__title--second">In hac habitasse platea dictumst.</h2>
-      <button class="button" title="Scroll down" name="Scroll down" type="button"><a title="Scroll down"
-              href="#Reasons"><img class="arrow" src="./assets/images/ico-scroll-down.svg"
-                  alt="Scroll down" /></a></button>
-  </hero>
-  <section class="tips">
-    <p class="small">Insomnia tips</p>
-    <h2 class="tips__title">Looking through a window</h2>
-    <p class="tips__title--description">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex
-      diam nec lectus. Vivamus
-      semper sodales rutrum.</p>
-    <button class="button" title="Go" name="Go" type="button">Go</button>
-  </section>
-  <section class="reasons" id="Reasons">
-      <h2 class="reasons__title">3 Reasons to purchase</h2>
-      <article class="reasons__article">
-        <h3 class="reasons__article--title">Ut sed metus</h3>
-        <p class="reasons__article--text">Lorem ipsum dolor sit amet, consecteur.</p>
-      </article>
-      <article class="reasons__article">
-        <h3 class="reasons__article--title">Curabitur ac erat</h3>
-        <p class="reasons__article--text">Mauris mattis urna quis lorem molestie.</p>
-      </article>
-      <article class="reasons__article">
-        <h3 class="reasons__article--title">Morbi dictum</h3>
-        <p class="reasons__article--text">Aliquam in dolor et dolor tincidunt.</p>
-      </article>
-      <button class="reasons__title--button" title="More reasons" name="More reasons" type="button">More reasons</button>
-  </section>
+  <main>
+    <section class="hero">
+        <h1 class="hero__title">Anonymous proxy</h1>
+        <h2 class="hero__title--second">In hac habitasse platea dictumst.</h2>
+        <a class="button" title="Scroll down" href="#Reasons"><img class="arrow" src="./assets/images/ico-scroll-down.svg"
+                alt="Scroll down" /></a>
+    </section>
+    <section class="tips">
+      <h3 class="small">Insomnia tips</h3>
+      <h2 class="tips__title">Looking through a window</h2>
+      <p class="tips__title--description">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex
+        diam nec lectus. Vivamus
+        semper sodales rutrum.</p>
+      <a class="button" title="Go" name="Go" type="button">Go</a>
+    </section>
+    <section class="reasons" id="Reasons">
+        <h2 class="reasons__title">3 Reasons to purchase</h2>
+        <article class="reasons__article">
+          <h3 class="reasons__article--title">Ut sed metus</h3>
+          <p class="reasons__article--text">Lorem ipsum dolor sit amet, consecteur.</p>
+        </article>
+        <article class="reasons__article">
+          <h3 class="reasons__article--title">Curabitur ac erat</h3>
+          <p class="reasons__article--text">Mauris mattis urna quis lorem molestie.</p>
+        </article>
+        <article class="reasons__article">
+          <h3 class="reasons__article--title">Morbi dictum</h3>
+          <p class="reasons__article--text">Aliquam in dolor et dolor tincidunt.</p>
+        </article>
+        <a class="reasons__title--button" title="More reasons" name="More reasons" type="button">More reasons</a>
+    </section>
+  </main>
   <footer class="footer">
-    <button class="footer__button" title="Scroll up" name="Scroll up" type="button"><a title="Scroll up"
-        href="#Header"><img src="./assets/images/ico-arrow.svg" alt="Scroll up" /></a></button>
-    <menu class="menu">
+    <a class="footer__button" title="Scroll up" href="#Header"><img src="./assets/images/ico-arrow.svg"
+        alt="Scroll up" /></a>
+    <section class="menu">
       <nav class="menu__nav articles">
         <ul>
           <li><a class="menu__nav--list" title="Adalab home" href="https://adalab.es/" target="_blank">Articles</a></li>
@@ -69,18 +70,17 @@
       <nav class="menu__nav media">
         <ul>
           <li><a class="menu__nav--list" title="Adalab home" href="https://adalab.es/" target="_blank">Twitter</a></li>
-          <li><a class="menu__nav--list" title="Adalab home" href="https://adalab.es/" target="_blank">Instagram</a></li>
+          <li><a class="menu__nav--list" title="Adalab home" href="https://adalab.es/" target="_blank">Instagram</a>
+          </li>
           <li><a class="menu__nav--list" title="Adalab home" href="https://adalab.es/" target="_blank">Mastodon.social</a>
           </li>
         </ul>
       </nav>
-      <nav class="menu__nav components">
-        <ul class="menu__nav--list">
-          <li class="copy">&copy;2022</li>
-          <li class="love">we <i class="fa-solid fa-heart"> </i> components</li>
-        </ul>
-      </nav>
-    </menu>
+      <div class="menu__nav components">
+        <p class="copy">&copy;2022</p>
+        <p class="love">we <i class="fa-solid fa-heart"> </i> components</p>
+      </div>
+    </section>
   </footer>
 </body>
 
